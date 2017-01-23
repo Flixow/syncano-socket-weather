@@ -24,10 +24,14 @@ Go to `syncano/weather/socket.yml` in socket directory and set `openweathermapAp
         [
             {
                 weather: 'rain',
-                hour: '12pm'
+                hour: '3pm'
             },
             {
                 weather: 'clear sky',
-                hour: '1pm'
+                hour: '6pm'
+            },
+            {
+                weather: 'clear sky',
+                hour: '9pm'
             }
         ]
