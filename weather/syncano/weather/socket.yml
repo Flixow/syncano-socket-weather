@@ -1,0 +1,45 @@
+name: weather
+description: Get weather for specific location
+
+endpoints:
+  get_actual_temperature:
+    description: Get actual temperature
+    file: scripts/getActualTemperature.js
+    parameters:
+      city:
+        type: string
+        description: "City for which you want to get weather"
+        example: "Oslo"
+    response:
+      mimetype: text/plain
+      examples:
+        -
+          exit_code: 200
+          description: Success
+          example: In Oslo we have -2.3℃
+        -
+          exit_code: 400
+          description: Failed
+          example: 'Error: Not found city'
+  get_three_hours:
+    description: Get three hours weather
+    file: scripts/getThreeHours.js
+    parameters:
+      city:
+        type: string
+        description: "City for which you want to get weather"
+        example: "Oslo"
+    response:
+      mimetype: application/json
+      examples:
+        -
+          exit_code: 200
+          description: Success
+          example: "[{weather: 'rain', hour: '12pm'}, {weather: 'clear sky', hour: '1pm'}]"
+        -
+          exit_code: 400
+          description: Failed
+          example: 'Error: Not found city'
+config:
+  openweathermapAppID:
+    value: <Your openweathermapAppID>
