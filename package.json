@@ -2,7 +2,7 @@
   "name": "Weather Syncano Socket",
   "description": "Get weather for specific location",
   "version": "0.0.1",
-  "author": "Syncano",
+  "author": "Daniel Siwek",
   "contributors": [],
   "bugs": {
     "url": "https://github.com/Syncano-Community/sockets/issues"
@@ -14,7 +14,11 @@
     "axios": "0.15.3"
   },
   "devDependencies": {},
-  "keywords": ["weather", "syncano", "socket"],
+  "keywords": [
+    "weather",
+    "syncano",
+    "socket"
+  ],
   "repository": "",
   "licenses": []
 }
