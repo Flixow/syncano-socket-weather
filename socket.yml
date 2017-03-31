@@ -1,5 +1,6 @@
 name: weather
 description: Get weather for specific location
+version: 0.0.1
 
 endpoints:
   get_actual_temperature:
