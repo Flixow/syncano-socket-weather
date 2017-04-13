@@ -3,6 +3,10 @@
   "description": "Get weather for specific location",
   "version": "0.0.1",
   "author": "Daniel Siwek",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flixow/weather-socket.git"
+  },
   "contributors": [],
   "bugs": {
     "url": "https://github.com/Syncano-Community/sockets/issues"
